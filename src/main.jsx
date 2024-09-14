@@ -7,7 +7,8 @@ import Homepage from './Firstproject/HomePage.jsx';
 import Service from './Firstproject/Service.jsx';
 import About from './Firstproject/about.jsx';
 import Contact from './Firstproject/Contact.jsx';
-import ProductPage from './Firstproject/ProductPage.jsx';
+import ProductPage from './Firstproject/ProductPage.jsx'
+import Layout from './Firstproject/Layout.jsx';
 
 
 
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     {/* <App /> */}
 
     <BrowserRouter>
+    <Layout>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/service" element={<Service />} />
@@ -24,5 +26,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/ProductPage" element={<ProductPage />} />
       </Routes>
+      </Layout>
+      
     </BrowserRouter>
   </>)
